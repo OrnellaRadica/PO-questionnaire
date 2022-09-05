@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PAPA OSCAR</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="knowledge_body">
+    <section id="knowledge" class="react-section">
+      <div class="react-loader">
+        <img src="./images/loading-btn-blue.svg" />
+      </div>
+    </section>
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+      const techs = [
+        { tech: "HTML", rating: "intermediate" },
+        { tech: "CSS", rating: "working_safe" },
+        { tech: "JavaScript", rating: "intermediate" },
+        { tech: "Liquid", rating: "" },
+        { tech: "React", rating: "working_safe" },
+        { tech: "Tailwind", rating: "working_safe" },
+        { tech: "Git", rating: "basic" },
+      ];
+      const options = [
+        { label: "basic", value: "basic" },
+        { label: "intermediate", value: "intermediate" },
+        { label: "working safe", value: "working_safe" },
+        { label: "pro", value: "pro" },
+      ];
+      const element = (
+        <div>
+          <h2>Rate your knowledge</h2>
+          {techs.map((t) => (
+            <div key={t.tech} className="option_container">
+              <div>{t.tech}</div>
+              {options.map((option) => (
+                <label key={option.value}>
+                  <input
+                    type="checkbox"
+                    readOnly
+                    checked={option.value === t.rating}
+                  />
+                  {option.label}
+                </label>
+              ))}
+            </div>
+          ))}
+        </div>
+      );
+      ReactDOM.createRoot(document.getElementById("knowledge")).render(element);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PAPA OSCAR</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>PAPA OSCAR QUESTIONNAIRE</h1>
+    <iframe class="iframe" src="./knowledge.html"></iframe>
+    <section>
+      <h2>HTML - Markup</h2>
+      <div>
+        <h3>How to Lazyload?</h3>
+        <p>Adding loading="lazy" to the img tag.</p>
+        <img
+          class="img-medium"
+          src="./images/loading-lazy.png"
+          alt="lazy load code snippet"
+        />
+      </div>
+      <div class="question">
+        <h3>How to bind CSS/JS files?</h3>
+        <p>
+          CSS file is combined through a link tag with the rel and href
+          attributes.
+          <br />JS file is combined through a script tag with the src attribute.
+        </p>
+        <img
+          class="img"
+          src="./images/css-js.png"
+          loading="lazy"
+          alt="bind css/js code snippet"
+        />
+      </div>
+      <div class="question">
+        <h3>What defines the head/body and how to use it?</h3>
+        <p>
+          The head is defined for head tag and body is defined for body tag
+          inside html tag. Example:
+        </p>
+        <img
+          class="img-small"
+          src="./images/head-body.png"
+          alt="head/body tag code snippet"
+        />
+      </div>
+      <div class="question">
+        <h3>Where to place JS scripts and why?</h3>
+        <p>
+          JS scripts are placed inside script tag in head or body tag.
+          <br />
+          It is recommended to place the script at the end of the body element
+          in case it is necessary to access any element that contains the body
+          and to improve the page load time.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>CSS</h2>
+      <div class="question">
+        <h3>Explain CSS Grid and Flexbox including use-cases.</h3>
+        <p>
+          Grid is a CSS property that is given to an element to establish the
+          number of rows and columns that is desired and the children defines
+          the space they occupy within said grid. It is used when you need to
+          define a fixed layout.
+          <br />
+          <br />
+          Flexbox is a CSS property that sets flex elements along the horizontal
+          or vertical axis, requiring you to decide whether you want to set rows
+          or columns. It is used when you need to define flexible child elements
+          to the container.
+        </p>
+      </div>
+      <div class="question">
+        <h3>Explain the difference between em & rem.</h3>
+        <p>
+          They are two units of relative CSS measurements.
+          <br />The difference is that em references the font size of the parent
+          element and rem references the font size of the root (html) element.
+        </p>
+        <h4>Example:</h4>
+
+        <div class="text-medium">
+          <div class="use-rem">Title with 2rem</div>
+
+          <div class="use-em">Title with 2em</div>
+        </div>
+      </div>
+      <div class="question">
+        <h3>
+          Explain the difference between padding & margin based on pseudo-button
+          (a-element).
+        </h3>
+        <p>
+          The difference is that the padding increases the size of the element
+          and the margin separates the elements from each other.
+        </p>
+        <img src="./images/margin-padding.png" alt="example" />
+        <p>
+          Green zone: padding.
+          <br />
+          Orange zone: margin.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>JS</h2>
+      <div class="question">
+        <h3>What kind of event listeners are there?</h3>
+        <p>The kind of event listeners are:</p>
+        <ul>
+          <li>Window</li>
+          <li>Mouse</li>
+          <li>Keyboard</li>
+          <li>Touch</li>
+          <li>Form</li>
+        </ul>
+      </div>
+      <div class="question">
+        <h3>Where to start counting in an array?</h3>
+        <p>Start counting from position 0.</p>
+      </div>
+      <div class="question">
+        <h3>
+          Create a basic event-listener that logs something to the console.
+        </h3>
+        <p>Open your console, and scroll to see the magic happen!</p>
+        <img
+          class="img"
+          src="./images/scroll-event.png"
+          alt="scroll event code snippet"
+        />
+      </div>
+      <div class="question">
+        <h3>
+          Build a div that changes the content of the div after clicking on it
+          with content of the array of the object below.
+        </h3>
+        <p></p>
+        <pre>
+            <code class="text-left">
+              const myVar={
+                “name”: “Happy Dev”, 
+                “experience”: 4, 
+                “languages”: 1,
+                “friends”: [“Larry, “Jeff”, “Tim”] 
+              };
+            </code>
+          </pre>
+
+        <div class="friendsdiv" id="friends">Click to see my friends</div>
+        <img
+          class="img"
+          src="./images/friends.png"
+          alt="change friends function"
+        />
+      </div>
+    </section>
+    <section>
+      <h2>Liquid - Schema Build, Section, Snippet with Parameter</h2>
+      <div class="question">
+        <h3>
+          Build a section with a super basic schema (only requirement that it is
+          accesible via the Shopify customizer).
+        </h3>
+
+        <img
+          class="img-liquid"
+          src="./images/liquid-section.png"
+          alt="section code snippet"
+        />
+      </div>
+      <div class="question">
+        <h3>
+          Create a snippet inside the section that takes parameters from the
+          schema as values.
+        </h3>
+
+        <img
+          class="img-liquid"
+          src="./images/liquid-script.png"
+          alt="script code snippet"
+        />
+      </div>
+    </section>
+
+    <script type="text/javascript" src="./scrollEvent.js"></script>
+    <script type="text/javascript" src="./friends.js"></script>
+  </body>
+</html>

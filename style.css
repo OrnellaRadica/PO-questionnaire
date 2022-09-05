@@ -1,0 +1,87 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 16px 16px;
+  font-size: 20px;
+  max-width: 692px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question {
+  padding: 8px 0;
+}
+.text-left {
+  text-align: left;
+}
+.img {
+  width: 100%;
+  border-radius: 8px;
+}
+.img-medium {
+  width: 80%;
+  border-radius: 8px;
+}
+.img-small {
+  width: 70%;
+  border-radius: 8px;
+}
+.img-liquid {
+  width: 100%;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.text-medium {
+  font-size: 32px;
+}
+
+.use-em {
+  font-size: 2em;
+}
+
+.use-rem {
+  font-size: 2rem;
+}
+.friendsdiv {
+  padding: 16px 24px;
+  margin: 16px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(87, 154, 195);
+  border-style: solid;
+  background-color: lightskyblue;
+}
+
+.option_container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: space-between;
+}
+.option_container > div {
+  width: 120px;
+}
+.react-section {
+  min-height: 178px;
+  width: 100%;
+}
+.react-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 178px;
+}
+
+.iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.knowledge_body {
+  padding: 0;
+}
